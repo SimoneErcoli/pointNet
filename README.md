@@ -22,10 +22,10 @@ python pointnet_pt_seg.py train \\
   --out-model pointnet_pt_seg.pth
 
 
-  python pointnet_pt_seg.py infer \\
-  --model pointnet_pt_seg.pth \\
-  --input-csv data/test_scene.csv \\
-  --output-csv out_pred.csv \\
-  --tta-rot "0,90,180,270" \\
-  --dbscan-eps 0.6 \\
+  python pointnet_pt_seg.py infer \
+  --model pointnet_pt_seg.pth \
+  --input-csv data/test_scene.csv \
+  --output-csv out_pred.csv \
+  --tta-rot "0,90,180,270" \
+  --dbscan-eps 0.6 \
   --dbscan-min-samples 40
